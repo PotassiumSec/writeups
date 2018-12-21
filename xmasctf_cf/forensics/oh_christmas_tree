@@ -1,0 +1,16 @@
+## Oh Christmas Tree
+
+Type: Forensics
+Flag Format: X-MAS{this_is_a_flag}
+Difficulty: ez
+File location: oct.jpg
+
+
+This is an ezpz steganography question:
+the flag is hidden in plaintext inside the image data, but is broken up into parts.
+
+
+
+Opening the file in a text editor and browsing through will reveal the flag in parts, reconstruct it.
+
+You **could** try and grep X-MAS from the file, but as it's split into parts it would take some fiddling.
