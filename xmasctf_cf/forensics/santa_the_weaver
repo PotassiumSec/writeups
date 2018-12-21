@@ -1,0 +1,14 @@
+## Santa the Weaver
+
+Type: Forensics (but called 'misc')
+Flag Format: X-MAS{this_is_a_flag}
+Difficulty: ez
+File location: flag.jpg
+
+
+
+This is very easy, the flag is hidden in plain text in the image.
+
+you can open the image in a hex or text editor and find 'X-MAS' to get to the flag.
+
+Alternatively you could grep it with -a (we're dealing with a non-text file).
