@@ -1,0 +1,22 @@
+## Santa's Security Levels
+
+Type: Forensics
+Flag Format: special
+Difficulty: fun
+File location: message.mp3 / special message.txt
+
+
+
+#### Listening to the MP3
+There's a little background noise, but it's clear that this is morse code.
+
+Playing around with a morse decoder program online will give you a github link, it's clear that this leads us to 'special message.txt'
+
+
+
+#### Reading the message
+special message.txt gives you a paragraph in ROT13. Decode it and you get something way too long to be a flag.
+
+But if you just take the capitals, it provides you the details to submit the flag.
+
+Just slap X-MAS{ } around the decoded text, make sure there are no spaces and it's all in lowercase.
