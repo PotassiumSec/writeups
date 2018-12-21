@@ -1,0 +1,32 @@
+## Message from Santa
+
+Type: Forensics
+Flag Format: X-MAS{this_is_a_flag}
+Difficulty: fun
+File location: cgds.img
+
+#### Opening the image
+Bear in mind that you have been provided with an .img file, while there is an image inside if you mount it, attempting to extract anything useful out of the first image will not help, so we must look at the .img file.
+
+Oddly, the .img file is way bigger than you need for one image, so what's going on?
+
+The image name 'grep' gives us an idea. If you grep the .img file itself you may see multiple instances of images, not just the one we can see. Try and grep different types of image.
+
+
+
+#### Opening the img
+Opening the .img file with a hex editor we would see all the data on contained within, what's important here is something called "unalloacted space".
+
+When you delete a file, instead of overwriting the disk with zeroes it waits until new data is written over the top of it, this can be exploited by us.
+
+As you can see in the hex editor by scrolling and poking around, there are more file names than shown in the file browser, these are in unallocated space. You could also see that there are multiple files available via grep.
+
+
+
+#### Recovering the data
+Now we know there's missing files, we have to recover them. There is a useful linux tool called 'foremost' that will extract the files you need, and even allows you to define extensions. I would recommend making a directory to store the information in
+
+
+
+#### Organising the data
+The flag is distribued across a lot of images, I manually rebuilt it as it wasn't too hard.
